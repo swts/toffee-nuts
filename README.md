@@ -1,30 +1,20 @@
 # Sweets
 Flexible declarative web framework for real-time projects
 
-## Toffee with rum
-Adds several useful filters and tags for nunjucks templates environment
-
-### Filters
-#### shuffle
-Returns shuffled array or object keys array
-
-#### date
-Formats date using [moment](http://momentjs.com) library
-
-`{{ time | date("MMM Do YY", [locale]) }}`
+## Toffee with nuts
+Adds cache busting tag
 
 ### Tags
-#### match
-Matches string to RegExp and returns true or false or optional values
-
-`{% match text, "^a", ["truthy"], ["falsy"] %}`
+#### cachebust
+Adds md5 hash to the end of the file. Also **makes a copy of the file with hash in the name**
+`{% cachebust filepath, url %}`
 
 
 ### Settings
 ```js
 this.template = {
     sweet: "toffee",
-    extensions: ["rum"] // <- add this
+    extensions: ["nuts"] // <- add this
     options: {
         path: path.join(this.root, "templates")
     }
