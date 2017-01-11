@@ -7,6 +7,7 @@ Adds cache busting tag
 ### Tags
 #### cachebust
 Adds md5 hash to the end of the file. Also **makes a copy of the file with hash in the name**
+
 `{% cachebust filepath, url %}`
 
 
