@@ -1,0 +1,26 @@
+{
+  "name": "sweets-toffee-nuts",
+  "version": "0.9.0",
+  "description": "Cache busting extension for sweets-toffee",
+  "keywords": [
+    "future",
+    "web",
+    "framework",
+    "sweets",
+    "templates",
+    "nunjucks",
+    "extensions",
+    "cache",
+    "bust"
+  ],
+  "author": "Alexey Novikov <v@2dubs.com> (http://2dubs.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:swts/toffee-nuts.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/index"
+}
