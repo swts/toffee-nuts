@@ -6,9 +6,12 @@ Adds cache busting tag
 
 ### Tags
 #### cachebust
-Adds md5 hash to the end of the file. Also **makes a copy of the file with hash in the name**
+Looks for file matching pattern `filename*.ext` and returns full url to this file. If no matches found returns url to file.
 
-`{% cachebust filepath, url %}`
+`{% cachebust filepath, baseurl %}`
+
+##### Exmaple:
+`{% cahebust 'static/app.js', '/static' %}`
 
 
 ### Settings
